@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="index,follow">
+
+    <title>Оренда хмарного сервера 1С бухгалтерії для підприємств в Україні</title>
+    <meta property="og:title" content="Windows VPS сервер для бухгалтера. 1С/BAF, Медок">
+    <meta property="og:image" content="assets/img/baner.png">
+    <meta property="og:description" content="Віртуальні Windows VPS сервери з хмарним сховищем, щоденним резервним копіюванням, підтримкою 1С бухгалтерії та податкової звітності Медок.">
+    <meta name="description" content="Віртуальні Windows VPS сервери з хмарним сховищем, щоденним резервним копіюванням, підтримкою 1С бухгалтерії та податкової звітності Медок.">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="icon" href="/assets/img/logo.png" type="image/x-icon">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Windows VPS сервер для бізнесу",
+      "description": "Оренда Windows VPS сервера у хмарнім сховищі для 1С бухгалтерії та податкової звітності Медок",
+      "serviceType": "Windows VPS, Хмарне сховище, Резервне копіювання, 1С Бухгалтерія, Налаштування роутера MikroTik, Податкова звітність Медок, Продовження електронних ключів",
+      "provider": {
+        "@type": "Organization",
+        "name": "Cloud Server VPS",
+        "url": "https://cloud-server.com.ua"
+      },
+      "offers": {
+        "@type": "Offer",
+        "url": "https://cloud.oster.com.ua/#plans",
+        "priceCurrency": "UAH",
+        "price": "400",
+        "priceSpecification": {
+          "@type": "PriceSpecification",
+          "priceCurrency": "UAH",
+          "price": "400",
+          "billingDuration": "P1M",
+          "billingIncrement": 1
+        },
+        "eligibleRegion": {
+          "@type": "Country",
+          "name": "Україна"
+        },
+        "availability": "https://schema.org/InStock"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "Україна"
+      }
+    }
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <script>
+    (function(){
+      emailjs.init("sphJWEI9hthPluNpV");
+    })();
+   </script>
+  </head>
+  <body>
+    <!-- Header -->
+    <nav class="navbar navbar-dark bg-dark">
+      <div class="container-fluid d-flex justify-content-between align-items-center">
+        <a class="navbar-brand d-flex align-items-center" href="/">
+          <img src="/assets/img/logo.png" alt="Oster logo" height="35" class="me-2">
+        </a>
+        <span class="navbar-text text-white">
+          <a href="tel:0976646510" class="phone-link">📞 097 664 65 10</a> | <a href="tel:0993874121" class="phone-link">📞 099 387 41 21</a> 
+        </span>
+      </div>
+    </nav>
+
+    <!-- Banner -->
+    <section class="banner">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-2">
+          </div>
+          <div class="col-md-7 text-center">
+            <h1 class="fw-bold">Оренда хмарного сервера для бухгалтера</h1>
+          </div>
+          <div class="col-md-3 text-center">
+            <img src="/assets/img/slide1.png" alt="Windows Server" class="img-fluid" style="max-width: 250px;">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing Plans -->
+    <section id="plans" class="py-5 bg-light">
+      <div class="container">
+        <h2 class="text-center mb-4">Тарифні плани на Віндовс Клауд Сервер (WCS)</h2>
+        <div class="row row-cols-1 row-cols-md-5 g-3">
+          <div class="col">
+            <div class="card text-center">
+              <div class="card-body">
+                <h5 class="card-title fw-bold">Міні (WCS-40)</h5>
+                <ul class="list-unstyled">
+                  <li>💻 Процесор: 2 vCPU</li>
+                  <li>🧩 Пам’ять: 4 GB RAM</li>
+                  <li>📀 Диск: 40 GB SSD</li>
+                  <li>🔗 Доступ: IP порт</li>
+                  <li>☁️ Бекап: раз в тиждень</li>
+                </ul>
+                <p class="fw-bold">700 грн/міс</p>
+                <button class="btn btn-primary btn-order" data-bs-toggle="modal" data-bs-target="#tariffModal" data-tariff="WCS-40">Замовити</button>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card text-center">
+              <div class="position-absolute top-0 start-50 translate-middle badge bg-primary">
+                ⭐ Популярний
+              </div>
+              <div class="card-body">
+                <h5 class="card-title fw-bold">Базис (WCS-60)</h5>
+                <ul class="list-unstyled">
+                  <li>💻 Процесор: 2 vCPU</li>
+                  <li>🧩 Пам’ять: 6 GB RAM</li>
+                  <li>📀 Диск: 60 GB SSD</li>
+                  <li>🔗 Доступ: IP порт</li>
+                  <li>☁️ Бекап: через день</li>
+                </ul>
+                <p class="fw-bold">950 грн/міс</p>
+                <button class="btn btn-primary btn-order" data-bs-toggle="modal" data-bs-target="#tariffModal" data-tariff="WCS-60">Замовити</button>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card text-center">
+              <div class="card-body">
+                <h5 class="card-title fw-bold">Стандарт (WCS-80)</h5>
+                <ul class="list-unstyled">
+                  <li>💻 Процесор: 3 vCPU</li>
+                  <li>🧩 Пам’ять: 8 GB RAM</li>
+                  <li>📀 Диск: 80 GB SSD</li>
+                  <li>🔗 Доступ: IP порт</li>
+                  <li>☁️ Бекап: кожен день</li>
+                </ul>
+                <p class="fw-bold">1200 грн/міс</p>
+                <button class="btn btn-primary btn-order" data-bs-toggle="modal" data-bs-target="#tariffModal" data-tariff="WCS-80">Замовити</button>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card text-center">
+              <div class="card-body">
+                <h5 class="card-title fw-bold">Комфорт (WCS-100)</h5>
+                <ul class="list-unstyled">
+                  <li>💻 Процесор: 4 vCPU</li>
+                  <li>🧩 Пам’ять: 10 GB RAM</li>
+                  <li>📀 Диск: 100 GB SSD</li>
+                  <li>🔗 Доступ: IP порт</li>
+                  <li>☁️ Бекап : кожен день</li>
+                </ul>
+                <p class="fw-bold">1450 грн/міс</p>
+                <button class="btn btn-primary btn-order" data-bs-toggle="modal" data-bs-target="#tariffModal" data-tariff="WCS-100">Замовити</button>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card text-center">
+              <div class="card-body">
+                <h5 class="card-title fw-bold">Профі (WCS-120)</h5>
+                <ul class="list-unstyled">
+                  <li>💻 Процесор: 6 vCPU</li>
+                  <li>🧩 Пам’ять: 12 GB RAM</li>
+                  <li>📀 Диск: 120 GB SSD</li>
+                  <li>🔗 Доступ: IP порт</li>
+                  <li>☁️ Бекап: кожен день</li>
+                </ul>
+                <p class="fw-bold">1900 грн/міс</p>
+                <button class="btn btn-primary btn-order" data-bs-toggle="modal" data-bs-target="#tariffModal" data-tariff="WCS-120">Замовити</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="py-5 bg-light">
+      <div class="container">
+        <h2 class="text-center mb-4">Часто запитують</h2>
+        <div class="accordion" id="faqAccordion">
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="q1">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#a1">
+                Чи безпечно тримати бухгалтерію у хмарі ?
+              </button>
+            </h2>
+            <div id="a1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                Всі наші сервери забезпечені безперебійним живленням та резервним інтернет каналом.<br>
+                Резервні копії ваших даних розподілені між іншими датацентрами, які щодня синхронізуються.<br>
+                Сервери захищені щоденним резервним копіюванням і ваші дані циклічно оновлюються за останніх 7 днів.<br>
+                Додатково ваші дані можуть щодня копіюватись на ваш гугл диск.<br>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="q2">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#a2">
+                Які документи потрібні для оформлення договору ?
+              </button>
+            </h2>
+            <div id="a2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                У період воєнного стану в Україні ми надаємо VPS сервери після ідентифікації клієнта та укладання договору.<br>
+                Це може бути статут, довіреність, паспорт, свідоцтво, витяг про реєстрацію особи.<br>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="q3">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#a3">
+                Як відновити пошкоджені дані на хмарному сервері ?
+              </button>
+            </h2>
+            <div id="a3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                Наші хмарні сервери мають систему резервного копіювання і дані на вашому сервері можна відновити до 7 днів назад.<br>
+                Для цього потрібно звернутися до нашої служби підтримки і ваші дані будуть відновлені.<br>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="q4">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#a4">
+                Чи є тестовий період?
+              </button>
+            </h2>
+            <div id="a4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">Після оформлення договору про співпрацю ми надаємо 1 місяць безкоштовного тестування</div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="q5">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#a5">
+                Як перенести мій офіс на хмарний сервер ?
+              </button>
+            </h2>
+            <div id="a5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                Ми безкоштовно допомагаємо перености ваші дані та бухгалтерські програми на наш сервер для тарифів WS-60+.<br>
+                Типові завдання включають перенесення 1С/BAS бухгалтерія, податкова звітність МЕДОК, клієнт-банк, документи робочого столу.<br>
+                Також допомагаємо з підключенням перефирійного обладнання, принтерами, сканерами.<br>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="q6">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#a6">
+                Як розрахувати конфігурацію сервера 1С ?
+              </button>
+            </h2>
+            <div id="a6" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                На одного користувача 1С потрібно приблизно 1Гб оперативної памяті, 0.5 процесора.<br>
+                Крім того для роботи операційної системи потрібно мінімум 2 Гб оперативної памяті.<br>
+                Отже для 4 одночасно працюючих користувачів 1С потрібно 2 віртуальних процесори і 6Гб оперативної памяті.<br>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="q7">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#a7">
+                Як підключитись у віддалений робочий стіл на сервер ?
+              </button>
+            </h2>
+            <div id="a7" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                Для доступу з Віндовс комп'ютера потрібен RDP клієнт mstsc, а з Лінукс remmina.<br> 
+                Доступ можна отримати безпосередньо через відкриту айпі адресу + порт, але це не є безпечно.<br>
+                Рекомендовано встановити на кожен комп'ютер користувача WireGuard ВПН.<br>
+                А найкраще встановити на роутері Мікротік WireGuard ВПН і це зробить доступ до сервера прозорим для всіх працівників офісу.<br>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="q8">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#a8">
+                Чи можна отримати бонус за рекомендацію другові ?
+              </button>
+            </h2>
+            <div id="a8" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                Так, можна !<br>
+                Розкажіть своїм клієнтам/партнерам/друзям/знайомим про нашу хмару.<br>
+                Ваш друг повідомляє, що він за рекомендацією, називає ПІБ чи назву компанії.<br>
+                Коли він працює з нами хоча б 2 місяці ви отримуєте бонус у розмірі його місячної абонплати.<br>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="text-center my-4">
+          <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#askModal">Ще є запитаня ?</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="py-5">
+      <div class="container">
+        <h2 class="text-center mb-4">Про нас</h2>
+        <div class="row">
+          <div class="col-md-2">
+            <img src="/assets/img/team.jpg" alt="Windows Server" class="img-fluid">
+          </div>
+          <div class="text-center col-md-10">
+            Ми надаємо не дорогий але якісний сервіс з оренди серверів для малого та середнього бізнесу в Україні.<br>
+            Наша команда системних адміністраторів допомагає бізнесу працювати в хмарних сховищах стабільно та безпечно.<br>
+            З 2006 року обслуговуємо комп’ютери, налаштовуємо сервери й мережі, забезпечуємо інформаційну безпеку.<br>
+            Налаштовуємо і оптимізовуємо роботу 1С/BAS під SQL, обслуговуємо програми податкової звітності Медок, Фредо.<br>
+            Стараємось для вас робити все швидко й кваліфіковано, щоб кожен клієнт відчував професійну підтримку.<br>
+            Обираючи нас, ви отримуєте не лише технічне рішення, а й надійного партнера, якому можна довіряти.<br>
+          </div>
+      </div>
+    </section>
+
+    <!-- Advantages -->
+    <section id="advantages" class="py-5">
+      <div class="container">
+        <h2 class="text-center mb-4">Що ви отримаєте ?</h2>
+        <div class="row text-center">
+          <div class="col-md-3 advantage-box">
+            <h4>🔄 Безкоштовне перенесення даних *</h4>
+            <ul class="list-unstyled mt-3">
+              <li>1С/BAS бухгалтерія</li>
+              <li>Податкова звітність МЕДОК</li>
+              <li>Клієнт банк, ЕЦП</li>
+            </ul>
+          </div>
+          <div class="col-md-3 advantage-box">
+            <h4>🔒 Безпека віддаленої роботи</h4>
+            <ul class="list-unstyled mt-3">
+              <li>Щоденні резервні копії</li>
+              <li>Шифроване з'єднання ВПН</li>
+              <li>Антивірус</li>
+            </ul>
+          </div>
+          <div class="col-md-3 advantage-box">
+            <h4>⚙️ Системний адміністратор офісу</h4>
+            <ul class="list-unstyled mt-3">
+              <li>Адміністрування комп'ютерів</li>
+              <li>Налаштування роутера</li>
+              <li>Підключення принтерів</li>
+            </ul>
+          </div>
+          <div class="col-md-3 advantage-box">
+            <h4>💰 Наші переваги та бонуси</h4>
+            <ul class="list-unstyled mt-3">
+              <li>Швидке створення сервера</li>
+              <li>Безкоштовний 1 місяць</li>
+              <li>Безкоштовні ІТ консультації</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer text-center">
+      <div class="container">
+        <p>
+          © 2015-2025 Остер клауд<br>
+          Хмарні рішення для бізнесу<br>
+          Україна, м.Тернопіль
+        </p>
+        <p>
+          <a href="tel:0976646510" class="phone-link">📞 097 664 65 10</a> | <a href="tel:0993874121" class="phone-link">📞 099 387 41 21</a> <br>
+          <a href="mailto:cloud@oster.com.ua">cloud@oster.com.ua</a>
+        </p>
+      </div>
+    </footer>
+
+    <!-- Модальне вікно тарифи -->
+    <div class="modal fade" id="tariffModal" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content shadow">
+          <div class="modal-header">
+            <h5 class="modal-title">Замовлення сервера</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрити"></button>
+          </div>
+          <div class="modal-body">
+            <!-- Form -->
+            <div class="container">
+              <form id="form-order" class="row g-3 justify-content-center email-form">
+                <div>
+                  <label class="form-label">Тариф</label>
+                  <input type="text" id="plan" name="plan" class="form-control" readonly>
+                </div>
+                <div>
+                  <label class="form-label">Ім'я*</label>
+                  <input type="text" name="name" class="form-control" required>
+                </div>
+                <div>
+                  <label class="form-label">Пошта*</label>
+                  <input type="email" name="email" class="form-control" required>
+                </div>
+                <div>
+                  <label class="form-label">Телефон*</label>
+                  <input type="tel" name="phone" class="form-control" required placeholder="+380...">
+                </div>
+                <div>
+                  <label class="form-label">Запитання</label>
+                  <textarea name="message" class="form-control" rows="4"></textarea>
+                </div>
+               <div class="text-center">
+                  <button type="submit" class="btn btn-success btn-lg px-5">Надіслати</button>
+                </div>
+              </form>
+            </div>
+            <!-- /Form -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Модальне вікно запитання -->
+    <div class="modal fade" id="askModal" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content shadow">
+          <div class="modal-header">
+            <h5 class="modal-title">Запитайте в нас</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрити"></button>
+          </div>
+          <div class="modal-body">
+            <!-- Form -->
+            <div class="container">
+              <form id="form-order" class="row g-3 justify-content-center email-form">
+                <div>
+                  <label class="form-label">Ім'я*</label>
+                  <input type="text" name="name" class="form-control" required>
+                </div>
+                <div>
+                  <label class="form-label">Телефон*</label>
+                  <input type="tel" name="phone" class="form-control" required placeholder="+380...">
+                </div>
+                <div>
+                  <label class="form-label">Запитання*</label>
+                  <textarea name="message" class="form-control" rows="4" required></textarea>
+                </div>
+               <div class="text-center">
+                  <button type="submit" class="btn btn-success btn-lg px-5">Надіслати</button>
+                </div>
+              </form>
+            </div>
+            <!-- /Form -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/assets/js/app.js"></script>
+  </body>
+</html>
