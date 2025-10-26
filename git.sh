@@ -9,7 +9,7 @@ cProject="html-CloudServer"
 cUser="VladVons"
 cMail="vladvons@gmail.com"
 cUrl="https://github.com/$cUser/$cProject"
-cBranch="master"
+cBranch="main"
 
 
 GitAuth()
