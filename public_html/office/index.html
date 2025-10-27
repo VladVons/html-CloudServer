@@ -154,7 +154,7 @@
                   <li>🔗 Доступ: IP порт</li>
                   <li>☁️ Бекап : кожен день</li>
                 </ul>
-                <p class="fw-bold">1450 грн/міс</p>
+                <p class="fw-bold">1500 грн/міс</p>
                 <button class="btn btn-primary btn-order" data-bs-toggle="modal" data-bs-target="#tariffModal" data-tariff="WCS-100">Замовити</button>
               </div>
             </div>
@@ -401,7 +401,7 @@
                 </div>
                 <div>
                   <label class="form-label">Ім'я*</label>
-                  <input type="text" name="name" class="form-control" required>
+                  <input type="text" name="name" class="form-control" minlength="3" required>
                 </div>
                 <div>
                   <label class="form-label">Пошта*</label>
@@ -409,14 +409,14 @@
                 </div>
                 <div>
                   <label class="form-label">Телефон*</label>
-                  <input type="tel" name="phone" class="form-control" required placeholder="+380...">
+                  <input type="tel" name="phone" class="form-control" minlength="10" placeholder="+380..." required>
                 </div>
                 <div>
-                  <label class="form-label">Запитання</label>
+                  <label class="form-label">Можливо маєте ще запитання ?</label>
                   <textarea name="message" class="form-control" rows="4"></textarea>
                 </div>
                <div class="text-center">
-                  <button type="submit" class="btn btn-success btn-lg px-5">Надіслати</button>
+                  <button type="submit" class="btn btn-success btn-lg px-5" data-template="template_vse74lg">Надіслати</button>
                 </div>
               </form>
             </div>
@@ -440,18 +440,18 @@
               <form id="form-order" class="row g-3 justify-content-center email-form">
                 <div>
                   <label class="form-label">Ім'я*</label>
-                  <input type="text" name="name" class="form-control" required>
+                  <input type="text" name="name" class="form-control" minlength="3" required>
                 </div>
                 <div>
                   <label class="form-label">Телефон*</label>
-                  <input type="tel" name="phone" class="form-control" required placeholder="+380...">
+                  <input type="tel" name="phone" class="form-control" minlength="10" placeholder="+380..." required>
                 </div>
                 <div>
                   <label class="form-label">Запитання*</label>
                   <textarea name="message" class="form-control" rows="4" required></textarea>
                 </div>
                <div class="text-center">
-                  <button type="submit" class="btn btn-success btn-lg px-5">Надіслати</button>
+                  <button type="submit" class="btn btn-success btn-lg px-5" data-template="template_ahh9wxb">Надіслати</button>
                 </div>
               </form>
             </div>
