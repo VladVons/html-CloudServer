@@ -1,15 +1,17 @@
 /*
-2025.10.26
-VladVons@gmail.com
+created: 2025.10.26
+author: VladVons@gmail.com
 */
 
 
 // Підставляємо назву тарифу в модальне вікно
 const tariffModal = document.getElementById('tariffModal');
-tariffModal.addEventListener('show.bs.modal', function (event) {
+tariffModal.addEventListener('shown.bs.modal', function (event) {
   const button = event.relatedTarget;
   const tariff = button.getAttribute('data-tariff');
   document.getElementById('plan').value = tariff;
+
+  tariffModal.querySelector('input[name="name"]').focus();
 });
 
 document.querySelectorAll(".email-form").forEach(form => {
