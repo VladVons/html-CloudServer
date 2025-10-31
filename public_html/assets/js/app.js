@@ -45,9 +45,12 @@ document.querySelectorAll(".email-form").forEach(form => {
     const gateService = "service_hq7bv0n";
     emailjs.sendForm(gateService, gateTemplate, form)
       .then(() => {
-        alert("✅ Лист успішно надіслано!");
         form.reset();
         modalInstance.hide();
+
+        //alert("✅ Лист успішно надіслано!");
+        const thanksModal = new bootstrap.Modal(document.getElementById("thanksModal"));
+        setTimeout(() => thanksModal.show(), 400);
       })
       .catch(error => {
         console.error("❌ Помилка:", error);
