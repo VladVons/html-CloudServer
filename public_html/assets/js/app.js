@@ -18,9 +18,6 @@ document.querySelectorAll(".email-form").forEach(form => {
   form.addEventListener("submit", function (e) {
     e.preventDefault();
 
-    const modal = form.closest(".modal");
-    const modalInstance = bootstrap.Modal.getInstance(modal) || new bootstrap.Modal(modal);
-
     var xhr = new XMLHttpRequest();
     xhr.open("GET", "https://ipapi.co/json/", false);
     xhr.send();
@@ -45,6 +42,8 @@ document.querySelectorAll(".email-form").forEach(form => {
     const gateService = "service_hq7bv0n";
     emailjs.sendForm(gateService, gateTemplate, form)
       .then(() => {
+        const modal = form.closest(".modal");
+        const modalInstance = bootstrap.Modal.getInstance(modal) || new bootstrap.Modal(modal);
         form.reset();
         modalInstance.hide();
 
