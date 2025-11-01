@@ -4,12 +4,20 @@ author: VladVons@gmail.com
 */
 
 
-// Підставляємо назву тарифу в модальне вікно
+// Підставляємо назву тарифу, ціни в модальне вікно
 const tariffModal = document.getElementById('tariffModal');
 tariffModal.addEventListener('shown.bs.modal', function (event) {
   const button = event.relatedTarget;
-  const tariff = button.getAttribute('data-tariff');
-  document.getElementById('plan').value = tariff;
+  const card = button.closest('.card-body');
+
+  const tariff = card.querySelector('.card-title').textContent.trim();
+  tariffModal.querySelector('input[name="plan"]').value = tariff;
+
+  const priceOld = card.querySelector('.old-price').textContent.trim();
+  document.getElementById('monthTariffVal').textContent = priceOld;
+
+  const price = card.querySelector('.price').textContent.trim();
+  document.getElementById('yearTariffVal').textContent = price;
 
   tariffModal.querySelector('input[name="name"]').focus();
 });
