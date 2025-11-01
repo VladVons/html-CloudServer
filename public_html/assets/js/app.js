@@ -14,10 +14,10 @@ tariffModal.addEventListener('shown.bs.modal', function (event) {
   tariffModal.querySelector('input[name="plan"]').value = tariff;
 
   const priceOld = card.querySelector('.old-price').textContent.trim();
-  document.getElementById('monthTariffVal').textContent = priceOld;
+  document.getElementById('monthPeriodVal').textContent = priceOld;
 
   const price = card.querySelector('.price').textContent.trim();
-  document.getElementById('yearTariffVal').textContent = price;
+  document.getElementById('yearPeriodVal').textContent = price;
 
   tariffModal.querySelector('input[name="name"]').focus();
 });
