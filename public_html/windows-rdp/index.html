@@ -66,7 +66,7 @@
         <a class="navbar-brand d-flex align-items-center" href="/">
           <img src="/assets/img/LogoW.png" alt="Oster logo" height="35" class="me-2">
         </a>
-        <span class="navbar-text text-white">
+        <span class="text-white">
           <a href="tel:0976646510" class="phone-link text-white">
             <i class="bi bi-telephone-fill"></i> 097 664 65 10
           </a>
@@ -193,8 +193,9 @@
           </div>
         </div>
         <div class="text-center my-4 py-5 bg-footer">
-          <button class="btn btn-primary rounded-pill btn-orange" data-bs-toggle="modal" data-bs-target="#askModal">Замовити консультацію</button>
-        </div>
+          <button class="btn btn-primary rounded-pill btn-orange" data-bs-toggle="modal" data-bs-target="#askModal">
+            <i class="bi bi-headset me-2"></i> Замовити консультацію
+          </button>        </div>
       </div>
     </section>
 
@@ -379,8 +380,8 @@
           <div class="col-md-3 advantage-box">
             <h4>💰 Наші переваги та бонуси</h4>
             <ul class="list-unstyled mt-3">
-              <li>Швидкі сервера</li>
-              <li>Великий досвід</li>
+              <li>Швидкі сервери</li>
+              <li>Пробний період</li>
               <li>Безкоштовні ІТ консультації</li>
             </ul>
           </div>
@@ -393,35 +394,49 @@
       <div class="container" id="footer">
         <div class="row">
           <div class="col-md-4">
-            <h3>Реквізити</h3>
-            ФОП: Вонс Володимир Мирославович<br>
-            Адреса: Україна, м.Тернопіль, вул.Карпенка 14/84<br>
-            IBAN: UA833052990000026007033314286<br>
-            ЄДРПОУ: 2616304834<br>
+            <div class="d-flex gap-2 text-white">
+              <a href="tel:0976646510" class="phone-link text-white">
+                <i class="bi bi-telephone-fill"></i> 097 6646510
+              </a>
+              <a href="tel:0993874121" class="phone-link text-white ms-3">
+                <i class="bi bi-telephone-fill"></i> 099 3874121
+              </a>
+            </div>
+            <div class="pt-2">
+              <button class="btn btn-primary rounded-pill btn-orange" data-bs-toggle="modal" data-bs-target="#askModal">
+                <i class="bi bi-envelope me-2"></i> Напишіть нам
+              </button>
+            </div>
           </div>
           <div class="col-md-4 text-center">
             © 2015-2025 Cloud Server<br>
             Хмарні рішення для бізнесу<br>
+            Україна 🇺🇦
           </div>
           <div class="col-md-4">
-            <h3>Підтримка</h3>
-            <span class="navbar-text text-white">
-              <a href="tel:0976646510" class="phone-link text-white">
-                <i class="bi bi-telephone-fill"></i> 097 664 65 10
-              </a>
-              <a href="tel:0993874121" class="phone-link text-white ms-3">
-                <i class="bi bi-telephone-fill"></i> 099 387 41 21
-              </a>
-            </span>
-            <div class="mt-2">
-              <button class="btn btn-primary rounded-pill btn-orange" data-bs-toggle="modal" data-bs-target="#askModal">Напишіть нам</button>
+            <div class="accordion" id="payAccordion">
+              <div class="accordion-item">
+                <h2 class="accordion-header bg-footer text-white" id="headingOne">
+                  <button class="accordion-button collapsed no-bg" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                    Банківські реквізити
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#payAccordion">
+                  <div class="accordion-body">
+                    ФОП: Вонс Володимир Мирославович<br>
+                    Адреса: м.Тернопіль, вул.Карпенка 14/84<br>
+                    IBAN: UA833052990000026007033314286<br>
+                    ЄДРПОУ: 2616304834<br>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </footer>
 
-    <!-- Модальне вікно тарифи --> 
+    <!-- Модальне вікно тарифи -->
     <div class="modal fade" id="tariffModal" tabindex="-1" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered modal-lg">
         <div class="modal-content shadow">
