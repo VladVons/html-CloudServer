@@ -1,0 +1,34 @@
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Windows VPS сервер для бізнесу",
+      "description": "Оренда Windows VPS сервера у хмарнім сховищі для 1С бухгалтерії та податкової звітності Медок",
+      "serviceType": "Windows VPS, Хмарне сховище, Резервне копіювання, 1С Бухгалтерія, Налаштування роутера MikroTik, Податкова звітність Медок, Продовження електронних ключів",
+      "provider": {
+        "@type": "Organization",
+        "name": "Cloud Server VPS",
+        "url": "https://cloud-server.com.ua"
+      },
+      "offers": {
+        "@type": "Offer",
+        "url": "https://cloud.oster.com.ua/#plans",
+        "priceCurrency": "UAH",
+        "price": "750",
+        "priceSpecification": {
+          "@type": "PriceSpecification",
+          "priceCurrency": "UAH",
+          "price": "750",
+          "billingDuration": "P1M",
+          "billingIncrement": 1
+        },
+        "eligibleRegion": {
+          "@type": "Country",
+          "name": "Україна"
+        },
+        "availability": "https://schema.org/InStock"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "Україна"
+      }
+    }

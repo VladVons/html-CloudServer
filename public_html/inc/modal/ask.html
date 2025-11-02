@@ -1,0 +1,35 @@
+    <!-- Модальне вікно запитання -->
+    <div class="modal fade" id="askModal" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content shadow">
+          <div class="modal-header bg-secondary text-white">
+            <h5 class="modal-title">Заповніть всі поля нижче</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Закрити"></button>
+          </div>
+          <div class="modal-body">
+            <!-- Form -->
+            <div class="container">
+              <form id="form-order" class="row g-3 justify-content-center email-form">
+                <div>
+                  <label class="form-label">Ваше ім'я*</label>
+                  <input type="text" name="name" class="form-control" minlength="3" required>
+                </div>
+                <div>
+                  <label class="form-label">Ваш телефон*</label>
+                  <input type="tel" name="phone" class="form-control" minlength="10" placeholder="+380..." required>
+                </div>
+                <div>
+                  <label class="form-label">Ваше запитання*</label>
+                  <textarea name="message" class="form-control" rows="5" required></textarea>
+                </div>
+               <div class="text-center">
+                  <button type="submit" class="btn btn-success btn-lg px-5" data-template="template_ahh9wxb">Надіслати</button>
+                </div>
+              </form>
+            </div>
+            <!-- /Form -->
+          </div>
+        </div>
+      </div>
+    </div>
+
