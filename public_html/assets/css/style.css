@@ -78,6 +78,19 @@
   border-color: white;
 }
 
+/* кнопка замовлення */
+.btn-order {
+  background-color: var(--bs-primary);
+  color: #fff;
+  border-radius: 50rem;
+  box-shadow: var(--bs-box-shadow);
+  border: none;
+  padding: 0.5rem 1.25rem;
+}
+.btn-order:hover {
+  background-color: var(--bs-primary-hover, #0b5ed7);
+}
+
 .old-price {
   border: 2px solid var(--color-orange);
   color: var(--color-orange);
