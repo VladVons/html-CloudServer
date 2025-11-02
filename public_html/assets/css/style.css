@@ -36,11 +36,10 @@
 }
 
 /* product */
-.product-card {
-  transition: transform .2s;
-}
-.product-card:hover {
-  transform: translateY(-5px);
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+  transition: all 0.4s ease;
 }
 
 /* phone */
