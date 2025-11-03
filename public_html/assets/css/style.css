@@ -37,7 +37,7 @@
 
 /* product */
 .card:hover {
-  transform: translateY(-10px);
+  transform: translateY(-5px);
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
   transition: all 0.4s ease;
 }
