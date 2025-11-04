@@ -109,3 +109,8 @@
   color: inherit;
   box-shadow: none;
 }
+
+/* перенос каретки */
+.line-break {
+  white-space: pre-line;
+}
