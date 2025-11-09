@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Відгуки клієнтів</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .review-carousel {
+      display: flex;
+      overflow-x: auto;
+      scroll-behavior: smooth;
+      scrollbar-width: none;
+    }
+    .review-carousel::-webkit-scrollbar {
+      display: none;
+    }
+    .review-card {
+      flex: 0 0 auto;
+      width: 250px;
+      margin-right: 1rem;
+      text-align: center;
+      background: #f8f9fa;
+      border-radius: 15px;
+      padding: 1rem;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    .review-card img {
+      width: 80px;
+      height: 80px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-bottom: 10px;
+    }
+    .carousel-btn {
+      background-color: #0d6efd;
+      border: none;
+      color: white;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+    }
+  </style>
+</head>
+<body class="bg-light py-5">
+
+<div class="container text-center">
+  <h3 class="mb-4">Відгуки наших клієнтів</h3>
+  
+  <div class="d-flex align-items-center justify-content-center">
+    <button class="carousel-btn me-2" id="scrollLeft">&lt;</button>
+
+    <div class="review-carousel" id="reviewCarousel">
+      <div class="review-card">
+        <img src="https://randomuser.me/api/portraits/women/1.jpg" alt="User">
+        <p>Чудовий сервіс! Все працює стабільно 👍</p>
+      </div>
+      <div class="review-card">
+        <img src="https://randomuser.me/api/portraits/men/2.jpg" alt="User">
+        <p>Підтримка завжди на зв’язку, дякую 💪</p>
+      </div>
+      <div class="review-card">
+        <img src="https://randomuser.me/api/portraits/women/3.jpg" alt="User">
+        <p>Дуже задоволена серверами, рекомендую 💙💛</p>
+      </div>
+      <div class="review-card">
+        <img src="https://randomuser.me/api/portraits/men/4.jpg" alt="User">
+        <p>Швидко і надійно, те що потрібно бізнесу!</p>
+      </div>
+      <div class="review-card">
+        <img src="https://randomuser.me/api/portraits/women/5.jpg" alt="User">
+        <p>Ціни доступні, якість висока 🔥</p>
+      </div>
+      <div class="review-card">
+        <img src="https://randomuser.me/api/portraits/men/6.jpg" alt="User">
+        <p>Рекомендую всім знайомим! 🙌</p>
+      </div>
+    </div>
+
+    <button class="carousel-btn ms-2" id="scrollRight">&gt;</button>
+  </div>
+</div>
+
+<script>
+  const carousel = document.getElementById('reviewCarousel');
+  const cardWidth = carousel.querySelector('.review-card').offsetWidth + 16; // ширина + відступ
+
+  document.getElementById('scrollLeft').addEventListener('click', () => {
+    carousel.scrollBy({ left: -cardWidth, behavior: 'smooth' });
+  });
+  document.getElementById('scrollRight').addEventListener('click', () => {
+    carousel.scrollBy({ left: cardWidth, behavior: 'smooth' });
+  });
+</script>
+
+</body>
+</html>
