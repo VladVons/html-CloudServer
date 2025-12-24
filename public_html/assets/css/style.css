@@ -16,9 +16,21 @@
   text-decoration: none;
 }
 
-
 .bg-footer {
   background-color: var(--color-bg-footer);
+}
+
+/* menu */
+.menu {
+  background-color: black;
+  gap: 10px;
+}
+.menu a {
+  color: white;
+}
+.menu :hover {
+  color: white;
+  font-weight: 600;
 }
 
 /* banner */
