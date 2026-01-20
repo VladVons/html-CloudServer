@@ -45,9 +45,10 @@ document.querySelectorAll(".email-form").forEach(form => {
       console.error("cant get external IP info");
     }
 
-    console.log("Send to ", "https://www.emailjs.com");
     const gateTemplate = e.submitter.dataset.template;
     const gateService = "service_hq7bv0n";
+    console.log("Send to: ", "https://www.emailjs.com", "template: ", gateService, "formId", form.id);
+
     emailjs.sendForm(gateService, gateTemplate, form)
       .then(() => {
         const modal = form.closest(".modal");
@@ -58,6 +59,15 @@ document.querySelectorAll(".email-form").forEach(form => {
         //alert("✅ Лист успішно надіслано!");
         const thanksModal = new bootstrap.Modal(document.getElementById("thanksModal"));
         setTimeout(() => thanksModal.show(), 400);
+
+        if (!window.__leadSent) {
+          window.__leadSent = true;
+          window.dataLayer = window.dataLayer || [];
+          window.dataLayer.push({
+            event: "generate_lead",
+            form_name: form.id
+          });
+        }
       })
       .catch(error => {
         console.error("❌ Помилка:", error);
