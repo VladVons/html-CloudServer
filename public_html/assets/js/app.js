@@ -67,6 +67,7 @@ document.querySelectorAll(".email-form").forEach(form => {
             event: "generate_lead",
             form_name: form.id
           });
+          console.log("Google event: ", "generate_lead", "form_name: ", form.id);
         }
       })
       .catch(error => {
